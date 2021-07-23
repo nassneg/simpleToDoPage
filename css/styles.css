@@ -47,31 +47,46 @@ h2 {
     /* color: lightyellow; */
 }
 
-input {
+
+
+main > input {
 	border-radius: 5px;
 	min-width: 65%;
 	padding: 5px;
 	border: none;
+	position: relative;
+	top: 390px;
+	font-family: 'Montserrat', Helvetica, sans-serif;
 }
 
 .enter {
 	border: none;
 	padding: 5px 15px;
-	border-radius: 5px;
-	color: #04A1BF;
-	background-color: #025F70;
+	border-radius: 10px;
+	color: #3D3232;
+	background-color: #FA948E;
 	transition: all 0.75s ease;
 	font-weight: normal;
+	position: relative;
+	top: 390px;
+	font-family: 'Montserrat', Helvetica, sans-serif;
 }
 
 .enter:hover{
 	background-color: #02798F;
 	color: #FFCD5D;
 }
+td {
+	padding-right: 10px; 
+	font-weight: 800;
+	font-size: large;
+	color: #3D3232;
+	padding-bottom: 15px;
 
-ul{
-	list-style-type: none;
 }
-li {
-	padding: 5px;
+
+.output {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

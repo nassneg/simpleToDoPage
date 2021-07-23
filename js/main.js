@@ -49,14 +49,14 @@ const updateTable = () => {
       }
 
       const cell1 = row.insertCell(0);
-      const cell2 = row.insertCell(1);
-      const cell3 = row.insertCell(2);
-      const cell4 = row.insertCell(3);
+      // const cell2 = row.insertCell(1);
+      const cell3 = row.insertCell(1);
+      // const cell4 = row.insertCell(3);
 
       cell1.innerHTML = taskArray[i].task;
-      cell2.innerHTML = taskArray[i].creationDate;
+      // cell2.innerHTML = taskArray[i].creationDate;
       cell3.innerHTML = `<input type="checkbox" onclick="updateOrder(${i})" ${taskArray[i].checkBoxState ? 'checked' : ''} >`;
-      cell4.innerHTML = taskArray[i].endDate;
+      // cell4.innerHTML = taskArray[i].endDate;
     }
   }
 };
