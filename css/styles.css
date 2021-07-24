@@ -9,6 +9,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	min-height: 100vh;
 }
 
 .bg {
@@ -26,6 +27,7 @@ body {
 
 .wrapper:hover {
 	box-shadow: 0 8px 32px 0 rgba(0,0,0,0.2);
+	transform: scale(0.99);
   }
 
 header {
@@ -59,6 +61,10 @@ main > input {
 	font-family: 'Montserrat', Helvetica, sans-serif;
 }
 
+main > input:hover {
+	cursor: pointer;
+}
+
 .enter {
 	border: none;
 	padding: 5px 15px;
@@ -75,14 +81,15 @@ main > input {
 .enter:hover{
 	background-color: #02798F;
 	color: #FFCD5D;
+	cursor: pointer;
 }
+
 td {
 	padding-right: 10px; 
 	font-weight: 800;
 	font-size: large;
 	color: #3D3232;
 	padding-bottom: 15px;
-
 }
 
 .output {
@@ -90,3 +97,7 @@ td {
 	justify-content: center;
 	align-items: center;
 }
+
+input[type='checkbox'] { 
+	cursor: pointer;
+ }
