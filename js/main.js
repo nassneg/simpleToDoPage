@@ -31,6 +31,7 @@ enter.addEventListener('click', () => {
 })
 
 const updateTable = () => {
+  let d = document.createElement("div");
   userInput.value = "";
   userInput.focus();
 
@@ -45,6 +46,7 @@ const updateTable = () => {
         row = resultTable.insertRow(-1);
         row.style.backgroundColor = "pink";
       } else {
+        
         row = resultTable.insertRow(0);
       }
 
@@ -63,7 +65,7 @@ const updateTable = () => {
 
 
 const updateOrder = (index) => {
-  console.log("checked, but using a function!");
+
   taskArray[index].checkBoxState = !taskArray[index].checkBoxState;
   taskArray[index].endDate = new Date().toDateString();
   updateTable();
