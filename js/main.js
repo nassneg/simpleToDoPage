@@ -45,6 +45,7 @@ const updateTable = () => {
         // move to the bottom using -1
         row = resultTable.insertRow(-1);
         row.style.backgroundColor = "pink";
+
       } else {
         
         row = resultTable.insertRow(0);
